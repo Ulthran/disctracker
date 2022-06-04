@@ -1,0 +1,52 @@
+enum EventType {
+  COMPLETION
+  TURNOVER
+  BLOCK
+  GOAL
+}
+
+type PointEvent @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  eventType: EventType!
+  pointID: ID! @index(name: "byPoint")
+  Players: [Player] @hasMany(indexName: "byPoint", fields: ["id"])
+}
+
+type Point @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  winQ: Boolean!
+  duration: Int
+  PointEvents: [PointEvent] @hasMany(indexName: "byPoint", fields: ["id"])
+  gameID: ID! @index(name: "byGame")
+  Players: [Player] @hasMany(indexName: "byPoint", fields: ["id"])
+}
+
+type Game @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  date: AWSDate
+  Points: [Point] @hasMany(indexName: "byGame", fields: ["id"])
+  Roster: Roster @hasOne
+}
+
+enum PlayerRole {
+  CUTTER
+  HANDLER
+  FLEX
+}
+
+type Player @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  number: Int
+  role: PlayerRole
+  pointeventID: ID @index(name: "byPointEvent")
+  rosters: [Roster] @manyToMany(relationName: "RosterPlayer")
+  pointID: ID @index(name: "byPoint")
+}
+
+type Roster @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  Players: [Player] @manyToMany(relationName: "RosterPlayer")
+}
