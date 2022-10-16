@@ -17,13 +17,12 @@ import {
   Text,
   View,
 } from "@aws-amplify/ui-react";
-import MyIcon from "./MyIcon";
+import MyIconchat from "./MyIconchat";
 export default function ProductCard(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
       gap="0"
-      direction="row"
       width="960px"
       alignItems="flex-start"
       position="relative"
@@ -33,7 +32,6 @@ export default function ProductCard(props) {
     >
       <Image
         width="320px"
-        height="366px"
         shrink="0"
         alignSelf="stretch"
         position="relative"
@@ -43,9 +41,8 @@ export default function ProductCard(props) {
       <Flex
         gap="24px"
         direction="column"
-        width="640px"
+        width="100%"
         grow="1"
-        basis="640px"
         height="366px"
         position="relative"
         padding="32px 32px 32px 32px"
@@ -73,7 +70,6 @@ export default function ProductCard(props) {
         ></Text>
         <Flex
           gap="16px"
-          direction="row"
           width="fit-content"
           alignItems="center"
           shrink="0"
@@ -84,7 +80,6 @@ export default function ProductCard(props) {
           <Rating
             display="flex"
             gap="8px"
-            direction="row"
             width="fit-content"
             alignItems="center"
             shrink="0"
@@ -116,7 +111,6 @@ export default function ProductCard(props) {
         </Flex>
         <Flex
           gap="16px"
-          direction="row"
           width="fit-content"
           alignItems="center"
           shrink="0"
@@ -127,7 +121,6 @@ export default function ProductCard(props) {
           <Badge
             display="flex"
             gap="10px"
-            direction="column"
             width="fit-content"
             justifyContent="flex-start"
             alignItems="center"
@@ -142,6 +135,7 @@ export default function ProductCard(props) {
             fontWeight="400"
             color="rgba(13,26,38,1)"
             textAlign="left"
+            direction="column"
             size="small"
             variation="default"
             children="New"
@@ -150,7 +144,6 @@ export default function ProductCard(props) {
           <Badge
             display="flex"
             gap="10px"
-            direction="column"
             width="fit-content"
             justifyContent="flex-start"
             alignItems="center"
@@ -165,6 +158,7 @@ export default function ProductCard(props) {
             fontWeight="400"
             color="rgba(13,26,38,1)"
             textAlign="left"
+            direction="column"
             size="small"
             variation="default"
             children="Classic"
@@ -173,7 +167,6 @@ export default function ProductCard(props) {
           <Badge
             display="flex"
             gap="10px"
-            direction="column"
             width="fit-content"
             justifyContent="flex-start"
             alignItems="center"
@@ -188,6 +181,7 @@ export default function ProductCard(props) {
             fontWeight="400"
             color="rgba(13,26,38,1)"
             textAlign="left"
+            direction="column"
             size="small"
             variation="default"
             children="Modern"
@@ -216,7 +210,6 @@ export default function ProductCard(props) {
         ></Text>
         <Flex
           gap="16px"
-          direction="row"
           alignItems="flex-start"
           shrink="0"
           alignSelf="stretch"
@@ -225,16 +218,15 @@ export default function ProductCard(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Quote")}
         >
-          <MyIcon
+          <MyIconchat
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            type="chat"
-            {...getOverrideProps(overrides, "MyIcon")}
-          ></MyIcon>
+            {...getOverrideProps(overrides, "MyIcon/chat")}
+          ></MyIconchat>
           <Text
             fontFamily="Inter"
             fontSize="16px"
@@ -248,7 +240,6 @@ export default function ProductCard(props) {
             letterSpacing="0.01px"
             width="536px"
             grow="1"
-            basis="536px"
             position="relative"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
@@ -269,7 +260,6 @@ export default function ProductCard(props) {
         ></Divider>
         <Flex
           gap="32px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"
@@ -279,7 +269,6 @@ export default function ProductCard(props) {
         >
           <Flex
             gap="16px"
-            direction="row"
             width="fit-content"
             alignItems="flex-start"
             shrink="0"
@@ -342,7 +331,6 @@ export default function ProductCard(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             width="fit-content"
             alignItems="flex-start"
             shrink="0"
@@ -405,7 +393,6 @@ export default function ProductCard(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             width="fit-content"
             alignItems="flex-start"
             shrink="0"

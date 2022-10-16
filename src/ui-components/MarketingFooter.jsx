@@ -56,7 +56,6 @@ export default function MarketingFooter(props) {
         position="absolute"
         top="40px"
         right="140px"
-        direction="row"
         alignItems="flex-start"
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Frame 405")}
@@ -64,6 +63,7 @@ export default function MarketingFooter(props) {
         <Flex
           gap="8px"
           direction="column"
+          width="fit-content"
           shrink="0"
           height="152px"
           position="relative"
@@ -172,6 +172,7 @@ export default function MarketingFooter(props) {
         <Flex
           gap="8px"
           direction="column"
+          width="fit-content"
           shrink="0"
           height="88px"
           position="relative"

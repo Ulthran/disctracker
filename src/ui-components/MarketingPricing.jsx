@@ -13,7 +13,6 @@ export default function MarketingPricing(props) {
   return (
     <Flex
       gap="24px"
-      direction="row"
       width="1440px"
       justifyContent="center"
       alignItems="center"
@@ -26,11 +25,9 @@ export default function MarketingPricing(props) {
     >
       <Flex
         gap="24px"
-        direction="row"
-        width="1392px"
+        width="100%"
         alignItems="flex-start"
         grow="1"
-        basis="1392px"
         height="439px"
         position="relative"
         padding="0px 0px 0px 0px"
@@ -39,11 +36,10 @@ export default function MarketingPricing(props) {
         <Flex
           gap="24px"
           direction="column"
-          width="448px"
+          width="100%"
           justifyContent="center"
           alignItems="center"
           grow="1"
-          basis="448px"
           height="439px"
           position="relative"
           padding="24px 24px 24px 24px"
@@ -91,7 +87,6 @@ export default function MarketingPricing(props) {
           <Button
             display="flex"
             gap="0"
-            direction="row"
             justifyContent="center"
             alignItems="center"
             shrink="0"
@@ -116,7 +111,6 @@ export default function MarketingPricing(props) {
           ></Divider>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -171,7 +165,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -184,7 +177,6 @@ export default function MarketingPricing(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -239,7 +231,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -252,7 +243,6 @@ export default function MarketingPricing(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -307,7 +297,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -322,11 +311,10 @@ export default function MarketingPricing(props) {
         <Flex
           gap="24px"
           direction="column"
-          width="448px"
+          width="100%"
           justifyContent="center"
           alignItems="center"
           grow="1"
-          basis="448px"
           height="439px"
           position="relative"
           padding="24px 24px 24px 24px"
@@ -374,7 +362,6 @@ export default function MarketingPricing(props) {
           <Button
             display="flex"
             gap="0"
-            direction="row"
             justifyContent="center"
             alignItems="center"
             shrink="0"
@@ -399,7 +386,6 @@ export default function MarketingPricing(props) {
           ></Divider>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -454,7 +440,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -467,7 +452,6 @@ export default function MarketingPricing(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -522,7 +506,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -535,7 +518,6 @@ export default function MarketingPricing(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -590,7 +572,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -605,11 +586,10 @@ export default function MarketingPricing(props) {
         <Flex
           gap="24px"
           direction="column"
-          width="448px"
+          width="100%"
           justifyContent="center"
           alignItems="center"
           grow="1"
-          basis="448px"
           height="439px"
           position="relative"
           padding="24px 24px 24px 24px"
@@ -657,7 +637,6 @@ export default function MarketingPricing(props) {
           <Button
             display="flex"
             gap="0"
-            direction="row"
             justifyContent="center"
             alignItems="center"
             shrink="0"
@@ -682,7 +661,6 @@ export default function MarketingPricing(props) {
           ></Divider>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -737,7 +715,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -750,7 +727,6 @@ export default function MarketingPricing(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -805,7 +781,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -818,7 +793,6 @@ export default function MarketingPricing(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -873,7 +847,6 @@ export default function MarketingPricing(props) {
               letterSpacing="0.01px"
               width="360px"
               grow="1"
-              basis="360px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"

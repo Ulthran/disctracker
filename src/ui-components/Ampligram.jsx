@@ -8,7 +8,9 @@
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Divider, Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
-import MyIcon from "./MyIcon";
+import MyIconfavoriteborder from "./MyIconfavoriteborder";
+import MyIconchatbubbleoutline from "./MyIconchatbubbleoutline";
+import MyIconsend from "./MyIconsend";
 export default function Ampligram(props) {
   const { overrides, ...rest } = props;
   return (
@@ -25,7 +27,6 @@ export default function Ampligram(props) {
     >
       <Flex
         gap="16px"
-        direction="row"
         justifyContent="center"
         alignItems="center"
         shrink="0"
@@ -37,11 +38,9 @@ export default function Ampligram(props) {
       >
         <Flex
           gap="16px"
-          direction="row"
-          width="568px"
+          width="100%"
           alignItems="center"
           grow="1"
-          basis="568px"
           height="65px"
           position="relative"
           padding="0px 0px 0px 0px"
@@ -77,7 +76,6 @@ export default function Ampligram(props) {
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
           width="fit-content"
           justifyContent="flex-end"
           alignItems="center"
@@ -128,7 +126,6 @@ export default function Ampligram(props) {
       ></Image>
       <Flex
         gap="16px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -139,7 +136,6 @@ export default function Ampligram(props) {
       >
         <Flex
           gap="24px"
-          direction="row"
           width="fit-content"
           alignItems="flex-start"
           shrink="0"
@@ -148,45 +144,40 @@ export default function Ampligram(props) {
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Share")}
         >
-          <MyIcon
+          <MyIconfavoriteborder
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            type="favorite_border"
-            {...getOverrideProps(overrides, "MyIcon29766772")}
-          ></MyIcon>
-          <MyIcon
+            {...getOverrideProps(overrides, "MyIcon/favorite_border")}
+          ></MyIconfavoriteborder>
+          <MyIconchatbubbleoutline
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            type="chat-bubble-outline"
-            {...getOverrideProps(overrides, "MyIcon29766773")}
-          ></MyIcon>
-          <MyIcon
+            {...getOverrideProps(overrides, "MyIcon/chat-bubble-outline")}
+          ></MyIconchatbubbleoutline>
+          <MyIconsend
             width="24px"
             height="24px"
             shrink="0"
             overflow="hidden"
             position="relative"
             padding="0px 0px 0px 0px"
-            type="send"
-            {...getOverrideProps(overrides, "MyIcon29766774")}
-          ></MyIcon>
+            {...getOverrideProps(overrides, "MyIcon/send")}
+          ></MyIconsend>
         </Flex>
         <Flex
           gap="10px"
-          direction="row"
-          width="472px"
+          width="100%"
           justifyContent="flex-end"
           alignItems="center"
           grow="1"
-          basis="472px"
           height="24px"
           position="relative"
           padding="0px 0px 0px 0px"

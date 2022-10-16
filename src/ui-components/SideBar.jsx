@@ -13,7 +13,6 @@ export default function SideBar(props) {
   return (
     <Flex
       gap="10px"
-      direction="row"
       width="385px"
       height="762px"
       alignItems="flex-start"
@@ -26,9 +25,8 @@ export default function SideBar(props) {
       <Flex
         gap="32px"
         direction="column"
-        height="698px"
+        width="100%"
         grow="1"
-        basis="385px"
         alignSelf="stretch"
         position="relative"
         padding="0px 0px 0px 0px"
@@ -39,7 +37,6 @@ export default function SideBar(props) {
           direction="column"
           height="585px"
           grow="1"
-          basis="585px"
           alignSelf="stretch"
           objectFit="cover"
           position="relative"
@@ -59,6 +56,7 @@ export default function SideBar(props) {
           <Flex
             gap="16px"
             direction="column"
+            width="fit-content"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
@@ -83,7 +81,6 @@ export default function SideBar(props) {
             ></Text>
             <Flex
               gap="16px"
-              direction="row"
               width="fit-content"
               alignItems="center"
               shrink="0"
@@ -140,7 +137,6 @@ export default function SideBar(props) {
             </Flex>
             <Flex
               gap="16px"
-              direction="row"
               width="fit-content"
               alignItems="center"
               shrink="0"
@@ -199,6 +195,7 @@ export default function SideBar(props) {
           <Flex
             gap="16px"
             direction="column"
+            width="fit-content"
             shrink="0"
             position="relative"
             padding="0px 0px 0px 0px"
@@ -224,6 +221,7 @@ export default function SideBar(props) {
             <Flex
               gap="16px"
               direction="column"
+              width="fit-content"
               shrink="0"
               position="relative"
               padding="0px 0px 0px 0px"
@@ -231,7 +229,6 @@ export default function SideBar(props) {
             >
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -288,7 +285,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -345,7 +341,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -402,7 +397,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -459,7 +453,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -516,7 +509,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -573,7 +565,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -630,7 +621,6 @@ export default function SideBar(props) {
               </Flex>
               <Flex
                 gap="16px"
-                direction="row"
                 width="fit-content"
                 alignItems="center"
                 shrink="0"
@@ -691,6 +681,7 @@ export default function SideBar(props) {
         <Flex
           gap="32px"
           direction="column"
+          width="fit-content"
           height="81px"
           justifyContent="flex-end"
           shrink="0"
@@ -710,7 +701,6 @@ export default function SideBar(props) {
           ></Divider>
           <Flex
             gap="129px"
-            direction="row"
             width="385px"
             alignItems="center"
             shrink="0"
@@ -720,11 +710,9 @@ export default function SideBar(props) {
           >
             <Flex
               gap="16px"
-              direction="row"
-              width="168px"
+              width="100%"
               alignItems="center"
               grow="1"
-              basis="168px"
               height="48px"
               position="relative"
               padding="0px 0px 0px 0px"

@@ -8,7 +8,10 @@
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
-import MyIcon from "./MyIcon";
+import MyIconarrowright from "./MyIconarrowright";
+import MyIconbookmarkborder from "./MyIconbookmarkborder";
+import MyIconshare from "./MyIconshare";
+import MyIconmorevert from "./MyIconmorevert";
 export default function SocialPost(props) {
   const { overrides, ...rest } = props;
   return (
@@ -24,7 +27,6 @@ export default function SocialPost(props) {
     >
       <Flex
         gap="40px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -36,9 +38,8 @@ export default function SocialPost(props) {
         <Flex
           gap="16px"
           direction="column"
-          width="712px"
+          width="100%"
           grow="1"
-          basis="712px"
           height="289px"
           position="relative"
           padding="0px 0px 0px 0px"
@@ -78,7 +79,6 @@ export default function SocialPost(props) {
             ></Text>
             <Flex
               gap="16px"
-              direction="row"
               alignItems="flex-start"
               shrink="0"
               alignSelf="stretch"
@@ -128,7 +128,6 @@ export default function SocialPost(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -137,16 +136,15 @@ export default function SocialPost(props) {
             padding="0px 0px 0px 0px"
             {...getOverrideProps(overrides, "Article")}
           >
-            <MyIcon
+            <MyIconarrowright
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              type="arrow-right"
-              {...getOverrideProps(overrides, "MyIcon29766860")}
-            ></MyIcon>
+              {...getOverrideProps(overrides, "MyIcon/arrow-right29766860")}
+            ></MyIconarrowright>
             <Text
               fontFamily="Inter"
               fontSize="16px"
@@ -159,7 +157,6 @@ export default function SocialPost(props) {
               justifyContent="flex-start"
               width="672px"
               grow="1"
-              basis="672px"
               position="relative"
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
@@ -172,7 +169,6 @@ export default function SocialPost(props) {
           </Flex>
           <Flex
             gap="16px"
-            direction="row"
             width="fit-content"
             alignItems="flex-start"
             shrink="0"
@@ -198,36 +194,33 @@ export default function SocialPost(props) {
               children="Share"
               {...getOverrideProps(overrides, "Share29766863")}
             ></Text>
-            <MyIcon
+            <MyIconbookmarkborder
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              type="bookmark_border"
-              {...getOverrideProps(overrides, "MyIcon29766864")}
-            ></MyIcon>
-            <MyIcon
+              {...getOverrideProps(overrides, "MyIcon/bookmark_border")}
+            ></MyIconbookmarkborder>
+            <MyIconshare
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              type="share"
-              {...getOverrideProps(overrides, "MyIcon29766865")}
-            ></MyIcon>
-            <MyIcon
+              {...getOverrideProps(overrides, "MyIcon/share")}
+            ></MyIconshare>
+            <MyIconmorevert
               width="24px"
               height="24px"
               shrink="0"
               overflow="hidden"
               position="relative"
               padding="0px 0px 0px 0px"
-              type="more_vert"
-              {...getOverrideProps(overrides, "MyIcon29766866")}
-            ></MyIcon>
+              {...getOverrideProps(overrides, "MyIcon/more_vert")}
+            ></MyIconmorevert>
           </Flex>
         </Flex>
         <Image
@@ -242,7 +235,6 @@ export default function SocialPost(props) {
       </Flex>
       <Flex
         gap="16px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -251,16 +243,15 @@ export default function SocialPost(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Read more29766868")}
       >
-        <MyIcon
+        <MyIconarrowright
           width="24px"
           height="24px"
           shrink="0"
           overflow="hidden"
           position="relative"
           padding="0px 0px 0px 0px"
-          type="arrow-right"
-          {...getOverrideProps(overrides, "MyIcon29766869")}
-        ></MyIcon>
+          {...getOverrideProps(overrides, "MyIcon/arrow-right29766869")}
+        ></MyIconarrowright>
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -275,7 +266,6 @@ export default function SocialPost(props) {
           letterSpacing="0.01px"
           width="872px"
           grow="1"
-          basis="872px"
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"

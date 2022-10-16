@@ -6,6 +6,7 @@ const EventType = {
   "COMPLETION": "COMPLETION",
   "TURNOVER": "TURNOVER",
   "BLOCK": "BLOCK",
+  "STALL": "STALL",
   "GOAL": "GOAL"
 };
 
@@ -15,14 +16,15 @@ const PlayerRole = {
   "FLEX": "FLEX"
 };
 
-const { PointEvent, Point, Game, Player, Roster } = initSchema(schema);
+const { PointEvent, Player, Roster, Point, Game, RosterPlayer } = initSchema(schema);
 
 export {
   PointEvent,
-  Point,
-  Game,
   Player,
   Roster,
+  Point,
+  Game,
+  RosterPlayer,
   EventType,
   PlayerRole
 };

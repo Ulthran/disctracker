@@ -8,7 +8,7 @@
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Button, Flex, Image, Text } from "@aws-amplify/ui-react";
-import MyIcon from "./MyIcon";
+import MyIcongroup from "./MyIcongroup";
 export default function ProfileCard(props) {
   const { overrides, ...rest } = props;
   return (
@@ -35,6 +35,7 @@ export default function ProfileCard(props) {
       <Flex
         gap="8px"
         direction="column"
+        width="fit-content"
         alignItems="center"
         shrink="0"
         position="relative"
@@ -79,7 +80,6 @@ export default function ProfileCard(props) {
       </Flex>
       <Flex
         gap="16px"
-        direction="row"
         width="fit-content"
         alignItems="flex-start"
         shrink="0"
@@ -87,16 +87,15 @@ export default function ProfileCard(props) {
         padding="0px 0px 0px 0px"
         {...getOverrideProps(overrides, "Followers")}
       >
-        <MyIcon
+        <MyIcongroup
           width="24px"
           height="24px"
           shrink="0"
           overflow="hidden"
           position="relative"
           padding="0px 0px 0px 0px"
-          type="group"
-          {...getOverrideProps(overrides, "MyIcon")}
-        ></MyIcon>
+          {...getOverrideProps(overrides, "MyIcon/group")}
+        ></MyIcongroup>
         <Text
           fontFamily="Inter"
           fontSize="16px"
@@ -119,7 +118,6 @@ export default function ProfileCard(props) {
       <Button
         display="flex"
         gap="0"
-        direction="row"
         justifyContent="center"
         alignItems="center"
         shrink="0"

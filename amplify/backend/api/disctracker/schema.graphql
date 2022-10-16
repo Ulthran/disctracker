@@ -2,6 +2,7 @@ enum EventType {
   COMPLETION
   TURNOVER
   BLOCK
+  STALL
   GOAL
 }
 
@@ -15,7 +16,7 @@ type PointEvent @model @auth(rules: [{allow: public}]) {
 type Point @model @auth(rules: [{allow: public}]) {
   id: ID!
   winQ: Boolean!
-  duration: Int
+  duration: AWSTime
   PointEvents: [PointEvent] @hasMany(indexName: "byPoint", fields: ["id"])
   gameID: ID! @index(name: "byGame")
   Players: [Player] @hasMany(indexName: "byPoint", fields: ["id"])
@@ -25,6 +26,9 @@ type Game @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
   date: AWSDate
+  hardCap: AWSTime
+  softCap: AWSTime
+  duration: AWSTime
   Points: [Point] @hasMany(indexName: "byGame", fields: ["id"])
   Roster: Roster @hasOne
 }

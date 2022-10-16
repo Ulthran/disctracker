@@ -25,7 +25,6 @@ export default function FeaturesText2x2(props) {
     >
       <Flex
         gap="24px"
-        direction="row"
         alignItems="flex-start"
         shrink="0"
         alignSelf="stretch"
@@ -37,9 +36,8 @@ export default function FeaturesText2x2(props) {
         <Flex
           gap="16px"
           direction="column"
-          width="568px"
+          width="100%"
           grow="1"
-          basis="568px"
           height="128px"
           position="relative"
           padding="0px 0px 0px 0px"
@@ -91,9 +89,8 @@ export default function FeaturesText2x2(props) {
         <Flex
           gap="24px"
           direction="column"
-          width="568px"
+          width="100%"
           grow="1"
-          basis="568px"
           height="368px"
           position="relative"
           padding="0px 0px 0px 0px"
@@ -101,7 +98,6 @@ export default function FeaturesText2x2(props) {
         >
           <Flex
             gap="24px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -113,9 +109,8 @@ export default function FeaturesText2x2(props) {
             <Flex
               gap="8px"
               direction="column"
-              width="272px"
+              width="100%"
               grow="1"
-              basis="272px"
               height="172px"
               position="relative"
               padding="0px 0px 0px 0px"
@@ -195,9 +190,8 @@ export default function FeaturesText2x2(props) {
             <Flex
               gap="8px"
               direction="column"
-              width="272px"
+              width="100%"
               grow="1"
-              basis="272px"
               height="172px"
               position="relative"
               padding="0px 0px 0px 0px"
@@ -277,7 +271,6 @@ export default function FeaturesText2x2(props) {
           </Flex>
           <Flex
             gap="24px"
-            direction="row"
             alignItems="flex-start"
             shrink="0"
             alignSelf="stretch"
@@ -289,9 +282,8 @@ export default function FeaturesText2x2(props) {
             <Flex
               gap="8px"
               direction="column"
-              width="272px"
+              width="100%"
               grow="1"
-              basis="272px"
               height="172px"
               position="relative"
               padding="0px 0px 0px 0px"
@@ -371,9 +363,8 @@ export default function FeaturesText2x2(props) {
             <Flex
               gap="8px"
               direction="column"
-              width="272px"
+              width="100%"
               grow="1"
-              basis="272px"
               height="172px"
               position="relative"
               padding="0px 0px 0px 0px"

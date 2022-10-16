@@ -35,7 +35,6 @@ export default function Features2x2(props) {
       >
         <Flex
           gap="24px"
-          direction="row"
           justifyContent="center"
           alignItems="center"
           shrink="0"
@@ -48,11 +47,10 @@ export default function Features2x2(props) {
           <Flex
             gap="16px"
             direction="column"
-            height="318px"
+            width="100%"
             justifyContent="center"
             alignItems="center"
             grow="1"
-            basis="548px"
             alignSelf="stretch"
             position="relative"
             padding="160px 40px 40px 40px"
@@ -105,11 +103,10 @@ export default function Features2x2(props) {
           <Flex
             gap="16px"
             direction="column"
-            height="318px"
+            width="100%"
             justifyContent="center"
             alignItems="center"
             grow="1"
-            basis="548px"
             alignSelf="stretch"
             position="relative"
             padding="160px 40px 40px 40px"
@@ -162,7 +159,6 @@ export default function Features2x2(props) {
         </Flex>
         <Flex
           gap="24px"
-          direction="row"
           justifyContent="center"
           alignItems="center"
           shrink="0"
@@ -175,11 +171,10 @@ export default function Features2x2(props) {
           <Flex
             gap="16px"
             direction="column"
-            height="318px"
+            width="100%"
             justifyContent="center"
             alignItems="center"
             grow="1"
-            basis="548px"
             alignSelf="stretch"
             position="relative"
             padding="160px 40px 40px 40px"
@@ -232,11 +227,10 @@ export default function Features2x2(props) {
           <Flex
             gap="16px"
             direction="column"
-            height="318px"
+            width="100%"
             justifyContent="center"
             alignItems="center"
             grow="1"
-            basis="548px"
             alignSelf="stretch"
             position="relative"
             padding="160px 40px 40px 40px"
