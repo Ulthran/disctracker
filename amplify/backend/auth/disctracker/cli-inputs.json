@@ -14,8 +14,8 @@
     ],
     "smsAuthenticationMessage": "Your login code is {####}",
     "smsVerificationMessage": "Your verification code is {####}",
-    "emailVerificationSubject": "Disctracker verification code: {####}",
-    "emailVerificationMessage": "Verification code: {####}",
+    "emailVerificationSubject": "DiscTracker verification code: {####}",
+    "emailVerificationMessage": "Thanks for trying out DiscTracker :)\n\nVerification code: {####}",
     "defaultPasswordPolicy": false,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [

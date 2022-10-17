@@ -1,8 +1,11 @@
 import './App.css';
+import { HomeScreen, GameScreen } from './more-ui-components';
 
 import React, { useEffect, useState } from 'react';
 import { Amplify, Auth, Hub } from 'aws-amplify';
 import awsconfig from './aws-exports';
+
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 Amplify.configure(awsconfig);
 
@@ -36,14 +39,52 @@ function App() {
   }
 
   return (
-    <div>
-      <p>User: {user ? JSON.stringify(user.attributes) : 'None'}</p>
-      {user ? (
-        <button onClick={() => Auth.signOut()}>Sign Out</button>
-      ) : (
-        <button onClick={() => Auth.federatedSignIn()}>Federated Sign In</button>
-      )}
-    </div>
+    <Router>
+      <div className='App'>
+        <div>
+            <div>
+              <div className='App-header'>
+                <Routes>
+                  <Route path='/new-game' element={<GameScreen />} />
+                  <Route path='/' element={<HomeScreen />} />
+                </Routes>
+              </div>
+            </div>
+        </div>
+      </div>
+    </Router>
+  );
+
+  return (
+    <Router>
+      <div className='App'>
+        <div>
+          {user ? (
+            <div>
+              <div className='App-header'>
+                <button onClick={() => Auth.signOut()}>Sign Out</button>
+                <p>User: {user ? JSON.stringify(user.attributes) : 'None'}</p>
+              </div>
+              <div className='App-header'>
+                <Link to="/">Home</Link>
+                <Link to="/new-game">New Game</Link>
+              </div>
+            </div>
+          ) : (
+            <button onClick={() => Auth.federatedSignIn()}>Federated Sign In</button>
+          )}
+        </div>
+
+        <Routes>
+          <Route path="/new-game">
+            <GameScreen />
+          </Route>
+          <Route path="/">
+            <HomeScreen />
+          </Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
