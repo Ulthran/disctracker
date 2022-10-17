@@ -42,6 +42,7 @@ function App() {
     <Router>
       <div className='App'>
         <div>
+          {user ? (
             <div>
               <div className='App-header'>
                 <Routes>
@@ -50,6 +51,9 @@ function App() {
                 </Routes>
               </div>
             </div>
+          ) : (
+            <button onClick={() => Auth.federatedSignIn()}>Federated Sign In</button>
+          )}
         </div>
       </div>
     </Router>
